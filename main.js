@@ -21,10 +21,19 @@ let arrayOggetti = [
 ];
 // console.log(arrayOggetti);
 
-// MILESTONE 1:
+
 
 for (let i = 0; i < arrayOggetti.length; i++) {
-    const elemento = arrayOggetti[i]
+    let elemento = arrayOggetti[i]
+// stampoMembro();
+     document.getElementById("lista").innerHTML = (arrayOggetti[0].nome + arrayOggetti[0].ruolo);
+     
+
+    
+
+    
+
+
     // console.log(elemento);   
 
     // for (let chiave in elemento) { 
@@ -33,6 +42,14 @@ for (let i = 0; i < arrayOggetti.length; i++) {
     // console.log(elemento[chiave]);   
     // }
     console.log(arrayOggetti[i].nome, arrayOggetti[i].ruolo);
+    
+
 }
+
+
+
+
+
+ 
 
 
