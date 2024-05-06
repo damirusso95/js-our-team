@@ -26,7 +26,7 @@ let arrayOggetti = [
 for (let i = 0; i < arrayOggetti.length; i++) {
     let elemento = arrayOggetti[i]
 // stampoMembro();
-     document.getElementById("lista").innerHTML = (arrayOggetti[0].nome + arrayOggetti[0].ruolo);
+    //  document.getElementById("lista").innerHTML = (arrayOggetti[0].nome + arrayOggetti[0].ruolo);
      
 
     
@@ -42,9 +42,15 @@ for (let i = 0; i < arrayOggetti.length; i++) {
     // console.log(elemento[chiave]);   
     // }
     console.log(arrayOggetti[i].nome, arrayOggetti[i].ruolo);
-    
-
 }
+document.getElementById("lista0").innerHTML = (arrayOggetti[0].nome + arrayOggetti[0].ruolo);
+document.getElementById("lista1").innerHTML = (arrayOggetti[1].nome + arrayOggetti[1].ruolo);
+document.getElementById("lista2").innerHTML = (arrayOggetti[2].nome + arrayOggetti[2].ruolo);
+document.getElementById("lista3").innerHTML = (arrayOggetti[3].nome + arrayOggetti[3].ruolo);
+document.getElementById("lista4").innerHTML = (arrayOggetti[4].nome + arrayOggetti[4].ruolo);
+document.getElementById("lista5").innerHTML = (arrayOggetti[5].nome + arrayOggetti[5].ruolo);
+
+
 
 
 
