@@ -11,6 +11,7 @@
 //  La funzione riceve un oggetto e restituisce una stringa di HTML :occhiolino:
 
 // MILESTONE 0:
+const listaElement = document.querySelector("ul");
 let arrayOggetti = [
     { nome: "Wayne Barnett", ruolo: "Founder & CEO", foto: "wayne-barnett-founder-ceo.jpg" },
     { nome: "Angela Caroll", ruolo: "Chief Editor", foto: "angela-caroll-chief-editor.jpg" },
@@ -19,36 +20,31 @@ let arrayOggetti = [
     { nome: "Scott Estrada", ruolo: "Developer", foto: "scott-estrada-developer.jpg" },
     { nome: "Barbara Ramos", ruolo: "Graphic Designer", foto: "barbara-ramos-graphic-designer.jpg" }
 ];
+let lista = creaLista();
+
+
 // console.log(arrayOggetti);
 
 
-
+// ciclo che stampa su console
 for (let i = 0; i < arrayOggetti.length; i++) {
-    let elemento = arrayOggetti[i]
-// stampoMembro();
-    //  document.getElementById("lista").innerHTML = (arrayOggetti[0].nome + arrayOggetti[0].ruolo);
-     
-
-    
-
-    
-
-
-    // console.log(elemento);   
-
-    // for (let chiave in elemento) { 
-
-    // console.log(elemento.nome, elemento.ruolo);   
-    // console.log(elemento[chiave]);   
-    // }
+    let elemento = arrayOggetti[i]  
     console.log(arrayOggetti[i].nome, arrayOggetti[i].ruolo);
 }
-document.getElementById("lista0").innerHTML = (arrayOggetti[0].nome + arrayOggetti[0].ruolo);
-document.getElementById("lista1").innerHTML = (arrayOggetti[1].nome + arrayOggetti[1].ruolo);
-document.getElementById("lista2").innerHTML = (arrayOggetti[2].nome + arrayOggetti[2].ruolo);
-document.getElementById("lista3").innerHTML = (arrayOggetti[3].nome + arrayOggetti[3].ruolo);
-document.getElementById("lista4").innerHTML = (arrayOggetti[4].nome + arrayOggetti[4].ruolo);
-document.getElementById("lista5").innerHTML = (arrayOggetti[5].nome + arrayOggetti[5].ruolo);
+
+
+
+// funzione che richiama il crea lista su dom html
+function creaLista() {
+    // ciclo for itero gli elementi
+for (let i = 0; i < arrayOggetti.length; i++) {
+    const element = arrayOggetti[i];
+    console.log(i, element);
+    // stampo tanti "li" quanti sono gli elementi nella lista
+    document.getElementById("ul").innerHTML += `<li>${(arrayOggetti[i].nome + arrayOggetti[i].ruolo)}</li>`;
+}   
+}
+
 
 
 
